@@ -22,22 +22,18 @@ if the last command is REPORT, the current state of the toy robot will shown.
 
 
 Example Input and Output:
-1.
-    ```sh
+
+
     PLACE 0,0,NORTH
     MOVE
     REPORT
     Output: 0,1,NORTH
-    ```
-2.
-    ```sh
+    
     PLACE 0,0,NORTH
     LEFT
     REPORT
     Output: 0,0,WEST
-    ```
-3.
-    ```sh
+   
     PLACE 1,2,EAST
     MOVE
     MOVE
@@ -45,4 +41,4 @@ Example Input and Output:
     MOVE
     REPORT
     Output: 3,3,NORTH
-    ```
+    
