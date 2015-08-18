@@ -1,0 +1,10 @@
+{
+  "name": "toy-robot",
+  "version": "0.0.0",
+  "description": "A toy robot simulation programme",
+  "repository": "",
+  "author": "James Xu <fur007@gmail.com>",
+  "main file": "toy.js"
+  "dependencies": {
+  }
+}
