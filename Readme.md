@@ -18,7 +18,7 @@ node toy.js
 ```
 
 then either type in one the above commands per line or copy and paste a set of commands (each command per line) 
-if the last command is REPORT, the current state of the toy robot will shown.
+if the last command is REPORT, the current state of the toy robot will be shown as Output.
 
 
 Example Input and Output:
