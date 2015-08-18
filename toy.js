@@ -10,6 +10,9 @@ var rd = readline.createInterface({
     terminal: false
 });
 
+rd.setPrompt("Please type in command line by line, or 'exit' to exit > ");
+rd.prompt(true);
+
 rd.on('line', function(line) {
     if (!line) return;
     
@@ -45,6 +48,10 @@ rd.on('line', function(line) {
         if (!toy.face) return;
         console.log("Output: " + toy.x + ',' + toy.y + ',' + toy.face);
     }
+})
+.on('close', function() {
+  console.log('Have a great day!');
+  process.exit(0);
 });
 
 var place = function(state){
@@ -106,4 +113,4 @@ var right = function(){
     toy.face = directs[i];
 };
 
-console.log("Please type in command line by line, or 'exit' to exit:")
+//console.log("Please type in command line by line, or 'exit' to exit:")
