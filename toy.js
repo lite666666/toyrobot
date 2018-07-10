@@ -29,16 +29,6 @@ rd.on('line', function(line) {
         //console.log(JSON.stringify(toy));
     }
     
-    if (command === "LEFT"){
-        left();
-        //console.log(JSON.stringify(toy));
-    }
-    
-    if (command === "RIGHT"){
-        right();
-        //console.log(JSON.stringify(toy));
-    }
-    
      if (command === "MOVE"){
         move();
         //console.log(JSON.stringify(toy));
@@ -76,25 +66,8 @@ var place = function(state){
 var move = function(){
     if (!toy.face) return;
     
-    if (toy.face === "NORTH"){
-        var next = toy.y + 1;
-        if (next <= 5) toy.y = next;
-    }
-    
-    if (toy.face === "SOUTH"){
-        var next = toy.y - 1;
-        if (next >= 0) toy.y = next;
-    }
-    
-     if (toy.face === "EAST"){
-        var next = toy.x + 1;
-        if (next <= 5) toy.x = next;
-    }
-    
-    if (toy.face === "WEST"){
-        var next = toy.x - 1;
-        if (next >= 0) toy.x = next;
-    }
+    var next = toy.y + 1;
+    if (next <= 5) toy.y = next;
 };
 
 var left = function(){
